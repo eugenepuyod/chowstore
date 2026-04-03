@@ -20,4 +20,5 @@ export const products = [
   { id: 15, name: 'Purebred Chow Chow Puppy', category: 'Dogs', price: 15000.00, image: '/images/puppy1.jpg', description: 'Fluffy, playful, and well-socialized. This puppy is vet-checked, vaccinated, and ready to bring joy to your home.', badge: 'Sale 10%' },
   { id: 16, name: 'Cute & Fluffy Chow Puppy', category: 'Dogs', price: 20000.00, image: '/images/puppy2.jpg', description: 'Vaccinated, healthy, and full of personality. Perfect companion for families and dog lovers.', badge: 'Sale 10%' },
   { id: 17, name: 'Beautiful Chow Chow Puppy for Sale', category: 'Dogs', price: 23000.00, image: '/images/puppy3.jpg', description: 'This adorable pup is vet-checked, fully vaccinated, and in excellent health. Known for its fluffy coat and loyal nature, the Chow Chow makes a wonderful companion for the right home.', badge: 'Sale 10%' },
+  { id: 18, name: 'Fish Oil Soft Chews for Chow Chow', category: 'Vitamins', price: 15.50, image: '/images/oilfish-food.jpg', description: 'OMEGA 3 & 6 DOES IT ALL- Provides essential vitamins to promote healthy skin, coat, joints, inflammation, heart and brain!', tags: ['health', 'accessories'] },
 ]
