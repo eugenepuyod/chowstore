@@ -152,7 +152,7 @@ const processCheckout = () => {
               <!-- Promo Code Input -->
               <div class="mb-6 border-b border-slate-200 pb-6">
                 <label class="block text-sm font-semibold text-slate-700 mb-2">Promo Code</label>
-                <div class="flex gap-2">
+                <div class="flex flex-wrap gap-2">
                   <input v-model="promoInput" @keyup.enter="applyPromo" type="text" class="flex-grow border border-slate-300 rounded-lg px-4 py-2.5 focus:ring-2 focus:ring-brand-500 focus:outline-none uppercase text-sm font-medium" placeholder="e.g. CHOW20">
                   <button @click="applyPromo" class="bg-slate-900 text-white px-5 py-2.5 rounded-lg font-bold hover:bg-brand-600 transition-colors shadow-sm text-sm">Apply</button>
                 </div>
