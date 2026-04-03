@@ -159,7 +159,7 @@ const updateFilters = () => { currentPage.value = 1 }
             </div>
             <h3 class="text-2xl font-bold text-slate-800 mb-2">No products found</h3>
             <p class="text-slate-500 text-center max-w-sm">Try adjusting your filters, category, or search term to quickly find what you're looking for.</p>
-            <button @click="searchQueryInput=''; activeSearchQuery=''; selectedCategory='All'; maxPrice=2000; selectedTags=[]; updateFilters()" class="mt-6 px-8 py-3 bg-slate-900 text-white font-bold rounded-xl hover:bg-brand-600 transition-colors shadow-m">Clear All Filters</button>
+            <button @click="searchQueryInput=''; activeSearchQuery=''; selectedCategory='All'; maxPrice=50000; selectedTags=[]; updateFilters()" class="mt-6 px-8 py-3 bg-slate-900 text-white font-bold rounded-xl hover:bg-brand-600 transition-colors shadow-m">Clear All Filters</button>
           </div>
           
           <div v-else :class="isListView ? 'flex flex-col gap-6' : 'grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6'">
