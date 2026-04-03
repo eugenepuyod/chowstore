@@ -279,7 +279,7 @@ onUnmounted(() => {
     <!-- Featured Products -->
     <section id="featured" class="py-24 bg-slate-50">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="flex flex-col md:flex-row justify-between items-end mb-12 border-b border-slate-200 pb-6">
+        <div class="flex flex-col md:flex-row justify-between items-start md:items-end mb-12 border-b border-slate-200 pb-6">
           <div>
             <span class="text-brand-600 font-bold tracking-wider uppercase text-sm mb-2 block">Premium Selection</span>
             <h2 class="text-3xl md:text-4xl font-extrabold text-slate-900">Featured</h2>
