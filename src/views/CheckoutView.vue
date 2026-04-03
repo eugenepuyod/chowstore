@@ -32,10 +32,16 @@ const applyPromo = () => {
 }
 
 const paymentMethods = [
-  { id: 'Visa', icon: '💳' },
-  { id: 'Mastercard', icon: '💳' },
-  { id: 'PayPal', icon: '🅿️' },
-  { id: 'GCash', icon: '📱' },
+  // { id: 'Visa', icon: '💳' },
+  // { id: 'Mastercard', icon: '💳' },
+  // { id: 'PayPal', icon: '🅿️' },
+  // { id: 'GCash', icon: '📱' },
+
+  { id: 'Visa', icon: '/images/visa.png' },
+  { id: 'Mastercard', icon: '/images/mastercard.png' },
+  { id: 'PayPal', icon: '/images/paypal.png' },
+  { id: 'GCash', icon: '/images/gcash.png' },
+  
 ]
 
 const processCheckout = () => {
@@ -92,14 +98,19 @@ const processCheckout = () => {
                   :key="method.id"
                   @click="selectedPayment = method.id"
                   :class="[
-                    'border-2 rounded-xl p-4 cursor-pointer text-center transition-all',
+                    'border-2 rounded-xl p-2 cursor-pointer text-center transition-all',
                     selectedPayment === method.id 
                       ? 'border-brand-500 bg-brand-50 shadow-md ring-1 ring-brand-500' 
                       : 'border-slate-200 hover:border-brand-300 hover:bg-slate-50'
                   ]"
                 >
-                  <div class="text-2xl mb-2">{{ method.icon }}</div>
-                  <div class="font-semibold text-sm">{{ method.id }}</div>
+                  <!-- <div class="text-2xl mb-2">{{ method.icon }}</div>
+                  <div class="font-semibold text-sm">{{ method.id }}</div> -->
+                <img 
+                  :src="method.icon" 
+                  :alt="method.id"
+                  class="w-20 h-20 object-contain mx-auto"
+                />
                 </div>
               </div>
 

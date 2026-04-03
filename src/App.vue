@@ -66,9 +66,9 @@
           <span class="text-white font-bold text-2xl mb-6 block tracking-tight">ChowStore</span>
           <p class="text-sm text-slate-400 mb-6 leading-relaxed">Premium quality products curated exclusively for your beloved Chow Chow. We prioritize their health, happiness, and unparalleled comfort.</p>
           <div class="flex gap-3">
-            <span class="w-9 h-9 rounded-full bg-slate-800 flex items-center justify-center hover:bg-brand-600 text-white transition-colors cursor-pointer border border-slate-700 shadow-sm font-semibold text-xs">FB</span>
-            <span class="w-9 h-9 rounded-full bg-slate-800 flex items-center justify-center hover:bg-brand-600 text-white transition-colors cursor-pointer border border-slate-700 shadow-sm font-semibold text-xs">IG</span>
-            <span class="w-9 h-9 rounded-full bg-slate-800 flex items-center justify-center hover:bg-brand-600 text-white transition-colors cursor-pointer border border-slate-700 shadow-sm font-semibold text-xs">TW</span>
+            <span class="w-9 h-9 rounded-full bg-slate-800 flex items-center justify-center hover:bg-brand-600 text-white transition-colors cursor-pointer border border-slate-700 shadow-sm font-semibold text-xs"><a href="#" class="social-icon"><Facebook /></a></span>
+            <span class="w-9 h-9 rounded-full bg-slate-800 flex items-center justify-center hover:bg-brand-600 text-white transition-colors cursor-pointer border border-slate-700 shadow-sm font-semibold text-xs"><a href="#" class="social-icon"><Instagram /></a></span>
+            <span class="w-9 h-9 rounded-full bg-slate-800 flex items-center justify-center hover:bg-brand-600 text-white transition-colors cursor-pointer border border-slate-700 shadow-sm font-semibold text-xs"><a href="#" class="social-icon"><Twitter /></a></span>
           </div>
         </div>
         
@@ -129,25 +129,25 @@
           <h3 class="text-white font-bold text-lg mb-6">Contact Info</h3>
           <ul class="space-y-4 text-sm mb-8 relative">
             <li class="flex items-start gap-3">
-              <span class="text-brand-500 text-base mt-0.5">📍</span>
+              <MapPin class="icon-sm" />
               <span class="leading-relaxed">Anami Homes North, Jugan<br>Consolacion, Philippines</span>
             </li>
             <li class="flex items-center gap-3">
-              <span class="text-brand-500 text-base">📞</span>
+              <Phone class="icon-sm" />
               <span class="font-medium">+63 912 345 6789</span>
             </li>
             <li class="flex items-center gap-3">
-              <span class="text-brand-500 text-base">📩</span>
+              <Mail class="icon-sm" />
               <a href="mailto:eugene@chowstore.com" class="hover:text-brand-400 transition-colors font-medium">eugene@chowstore.com</a>
             </li>
           </ul>
           
           <h3 class="text-white font-bold text-sm mb-4 uppercase tracking-wider">Secure Checkout</h3>
           <div class="flex gap-2.5">
-             <div class="w-11 h-7 bg-slate-800 rounded flex items-center justify-center text-[10px] font-bold border border-slate-700 text-slate-300">VISA</div>
-             <div class="w-11 h-7 bg-slate-800 rounded flex items-center justify-center text-[10px] font-bold border border-slate-700 text-slate-300">MC</div>
-             <div class="w-11 h-7 bg-slate-800 rounded flex items-center justify-center text-[9px] font-bold border border-slate-700 text-slate-300">PayPal</div>
-             <div class="w-11 h-7 bg-slate-800 rounded flex items-center justify-center text-[9px] font-bold border border-slate-700 text-slate-300">GCash</div>
+             <div class="w-11 h-7 bg-[white] rounded flex items-center justify-center text-[10px] font-bold border border-slate-700 text-slate-300"><img src="/images/visa.png" width="50" height="50" /></div>
+             <div class="w-11 h-7 bg-[white] rounded flex items-center justify-center text-[10px] font-bold border border-slate-700 text-slate-300"><img src="/images/mastercard.png" width="50" height="50" /></div>
+             <div class="w-11 h-7 bg-[white] rounded flex items-center justify-center text-[9px] font-bold border border-slate-700 text-slate-300"><img src="/images/paypal.png" width="50" height="50" /></div>
+             <div class="w-11 h-7 bg-[white] rounded flex items-center justify-center text-[9px] font-bold border border-slate-700 text-slate-300"><img src="/images/gcash.png" width="50" height="50" /></div>
           </div>
         </div>
         
@@ -169,6 +169,7 @@
 <script setup>
 import { ref } from 'vue'
 import { RouterLink, RouterView } from 'vue-router'
+import { MapPin, Facebook, Instagram, Twitter, Phone, Mail } from 'lucide-vue-next'
 
 const isMobileMenuOpen = ref(false)
 </script>
