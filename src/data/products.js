@@ -1,0 +1,23 @@
+export const categoriesList = ['All', 'Food', 'Vitamins', 'Dogs', 'Accessories']
+
+export const tagsList = ['nutrition', 'health', 'puppy', 'adult', 'coat', 'adoption', 'accessories']
+
+export const products = [
+  { id: 1, name: 'Chow Premium Kibble', category: 'Food', price: 45.99, image: '/images/premium_kibble.png', description: 'Grain-free formula for a shining coat.', badge: 'Best Seller', tags: ['nutrition', 'adult'] },
+  { id: 2, name: 'Chow Joint Care Chews', category: 'Vitamins', price: 29.50, image: '/images/chow-joint-care-chews.jpg', description: 'Glucosamine drops for active dogs.', badge: 'New', tags: ['health', 'adult'] },
+  { id: 3, name: 'Adorable Chow Puppy', category: 'Dogs', price: 1500.00, image: '/images/chow_puppy.png', description: 'Vet-checked and fully vaccinated puppy.', tags: ['puppy', 'adoption'] },
+  { id: 4, name: 'Fluffy Coat Supplements', category: 'Vitamins', price: 34.00, image: 'https://images.unsplash.com/photo-1584362917165-526a968579e8?w=300&q=80&fit=crop', description: 'Essential oils for a thick fluffy coat.', tags: ['health', 'coat'] },
+  { id: 5, name: 'Wild Alaskan Salmon Feast', category: 'Food', price: 55.00, image: '/images/wild-alaskan-salmon-feast.jpg', description: 'High protein nutrition tailored for Chows.', badge: 'Premium', tags: ['nutrition', 'puppy', 'adult'] },
+  { id: 6, name: 'Playful Adult Chow', category: 'Dogs', price: 800.00, image: '/images/bigbrownchowleft.jpg', description: 'Trained adult Chow Chow seeking a loving home.', badge: 'Sale 20%e' },
+  { id: 7, name: 'Chow Grooming Brush', category: 'Accessories', price: 18.99, image: 'https://images.unsplash.com/photo-1516734212186-a967f81ad0d7?w=300&q=80', description: 'Heavy duty slicker brush for thick undercoats.', tags: ['coat', 'accessories'] },
+  { id: 8, name: 'Premium Leather Collar', category: 'Accessories', price: 25.00, image: 'https://images.unsplash.com/photo-1583337130417-3346a1be7dee?w=300&q=80', description: 'Handcrafted wide collar for Chow necks.', tags: ['accessories'] },
+  { id: 9, name: 'Chow Puppy Kibble', category: 'Food', price: 42.00, image: 'https://images.unsplash.com/photo-1589924691995-400dc9ecc119?w=300&q=80', description: 'Smaller bite formula for young puppies.', tags: ['nutrition', 'puppy'] },
+  { id: 10, name: 'Relaxing Calming Spray', category: 'Vitamins', price: 15.50, image: '/images/Aromatherapy1.jpg', description: 'Aromatherapy spray for anxious dogs.', tags: ['health', 'accessories'] },
+  { id: 11, name: 'Organic Chicken Bites', category: 'Food', price: 22.99, image: '/images/organic-chicken-bites.jpg', description: 'Real chicken training treats.', tags: ['nutrition', 'adult'] },
+  { id: 12, name: 'Senior Chow Support', category: 'Vitamins', price: 38.00, image: 'https://images.unsplash.com/photo-1584362917165-526a968579e8?w=300&q=80', description: 'Comprehensive vitamins for older dogs.', tags: ['health', 'adult'] },
+  { id: 13, name: 'Big White Brown Chow', category: 'Dogs', price: 900.50, image: '/images/chow-chow-standing-in-park.jpg', description: 'Loyal and trained Chow Chow seeking a safe and affectionate home.', badge: 'Sale 10%' },
+  { id: 14, name: 'The Ancient Origin Of Chow', category: 'Dogs', price: 1000.50, image: '/images/Anchient-origin-of-chowjpg.jpg', description: 'Gentle adult Chow Chow ready to join a loving family.', badge: 'Sale 10%' },
+  { id: 15, name: 'Purebred Chow Chow Puppy', category: 'Dogs', price: 15000.00, image: '/images/puppy1.jpg', description: 'Fluffy, playful, and well-socialized. This puppy is vet-checked, vaccinated, and ready to bring joy to your home.', badge: 'Sale 10%' },
+  { id: 16, name: 'Cute & Fluffy Chow Puppy', category: 'Dogs', price: 20000.00, image: '/images/puppy2.jpg', description: 'Vaccinated, healthy, and full of personality. Perfect companion for families and dog lovers.', badge: 'Sale 10%' },
+  { id: 17, name: 'Beautiful Chow Chow Puppy for Sale', category: 'Dogs', price: 23000.00, image: '/images/puppy3.jpg', description: 'This adorable pup is vet-checked, fully vaccinated, and in excellent health. Known for its fluffy coat and loyal nature, the Chow Chow makes a wonderful companion for the right home.', badge: 'Sale 10%' },
+]
