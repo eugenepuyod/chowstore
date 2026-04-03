@@ -10,7 +10,7 @@ const featuredProducts = ref([
 ])
 
 const saleProducts = ref([
-   { id: 15, name: 'Purebred Chow Chow Puppy', category: 'Dogs', price: 15000.00, image: '/images/puppy1.jpg', description: 'Fluffy, playful, and well-socialized. This puppy is vet-checked, vaccinated, and ready to bring joy to your home.', badge: 'Sale 10%' },
+  { id: 15, name: 'Purebred Chow Chow Puppy', category: 'Dogs', price: 15000.00, image: '/images/puppy1.jpg', description: 'Fluffy, playful, and well-socialized. This puppy is vet-checked, vaccinated, and ready to bring joy to your home.', badge: 'Sale 10%' },
   { id: 16, name: 'Cute & Fluffy Chow Puppy', category: 'Dogs', price: 20000.00, image: '/images/puppy2.jpg', description: 'Vaccinated, healthy, and full of personality. Perfect companion for families and dog lovers.', badge: 'Sale 10%' },
   { id: 17, name: 'Beautiful Chow Chow Puppy for Sale', category: 'Dogs', price: 23000.00, image: '/images/puppy3.jpg', description: 'This adorable pup is vet-checked, fully vaccinated, and in excellent health. Known for its fluffy coat and loyal nature, the Chow Chow makes a wonderful companion for the right home.', badge: 'Sale 10%' },
   { id: 6, name: 'Playful Adult Chow', category: 'Dogs', price: 800.00, image: '/images/bigbrownchowleft.jpg', description: 'Trained adult Chow Chow seeking a loving home.', badge: 'Sale 20%e' },
