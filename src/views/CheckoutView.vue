@@ -32,13 +32,10 @@ const applyPromo = () => {
 }
 
 const paymentMethods = [
-  // { id: 'Visa', icon: '💳' },
-  // { id: 'Mastercard', icon: '💳' },
-  // { id: 'PayPal', icon: '🅿️' },
-  // { id: 'GCash', icon: '📱' },
-
   { id: 'Visa', icon: '/images/visa.png' },
   { id: 'Mastercard', icon: '/images/mastercard.png' },
+  { id: 'BDO', icon: '/images/bdo.png' },
+  { id: 'BPI', icon: '/images/bpi.png' },
   { id: 'PayPal', icon: '/images/paypal.png' },
   { id: 'GCash', icon: '/images/gcash.png' },
   
@@ -52,21 +49,7 @@ const processCheckout = () => {
   }, 2000)
 }
 </script>
-<style scoped>
-@media (min-width: 767px) and (max-width: 768px) {
-  #flexwrapcoupon{
-    flex-wrap: wrap;
-  }
-}
 
-
-@media (min-width: 319px) and (max-width: 320px) {
-  #flexwrapcoupon{
-    flex-wrap: wrap;
-  }
-}
-
-</style>
 
 <template>
   <div class="bg-white min-h-screen py-16">
@@ -130,7 +113,7 @@ const processCheckout = () => {
               </div>
 
               <!-- Card Details Mock -->
-              <div v-if="['Visa', 'Mastercard'].includes(selectedPayment)" class="mt-6 p-6 bg-slate-50 rounded-xl border border-slate-200 space-y-4">
+              <div v-if="['Visa', 'Mastercard', 'BDO', 'BPI'].includes(selectedPayment)" class="mt-6 p-6 bg-slate-50 rounded-xl border border-slate-200 space-y-4">
                 <div>
                   <label class="block text-sm font-medium text-slate-700 mb-1">Card Number</label>
                   <input type="text" class="w-full border border-slate-300 rounded-lg px-4 py-3 focus:ring-2 focus:ring-brand-500 bg-white" placeholder="0000 0000 0000 0000">
@@ -178,8 +161,13 @@ const processCheckout = () => {
               <!-- Promo Code Input -->
               <div class="mb-6 border-b border-slate-200 pb-6">
                 <label class="block text-sm font-semibold text-slate-700 mb-2">Promo Code</label>
-                <div id="flexwrapcoupon" class="flex gap-2">
-                  <input v-model="promoInput" @keyup.enter="applyPromo" type="text" class="flex-grow border border-slate-300 rounded-lg px-4 py-2.5 focus:ring-2 focus:ring-brand-500 focus:outline-none uppercase text-sm font-medium" placeholder="e.g. CHOW20">
+                <div id="flexwrapcoupon" class="eugenerp flex flex-col sm:flex-row gap-2">
+                  <input 
+                    v-model="promoInput" 
+                    @keyup.enter="applyPromo" 
+                    type="text" 
+                    class="w-full sm:flex-grow border border-slate-300 rounded-lg px-4 py-2.5 focus:ring-2 focus:ring-brand-500 focus:outline-none uppercase text-sm font-medium" 
+                    placeholder="e.g. CHOW20">
                   <button @click="applyPromo" class="bg-slate-900 text-white px-5 py-2.5 rounded-lg font-bold hover:bg-brand-600 transition-colors shadow-sm text-sm">Apply</button>
                 </div>
                 <p v-if="promoError" class="text-rose-500 text-xs mt-2 font-medium">{{ promoError }}</p>

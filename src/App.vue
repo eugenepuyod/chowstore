@@ -146,6 +146,8 @@
           <div class="flex gap-2.5">
              <div class="w-11 h-7 bg-[white] rounded flex items-center justify-center text-[10px] font-bold border border-slate-700 text-slate-300"><img src="/images/visa.png" width="50" height="50" /></div>
              <div class="w-11 h-7 bg-[white] rounded flex items-center justify-center text-[10px] font-bold border border-slate-700 text-slate-300"><img src="/images/mastercard.png" width="50" height="50" /></div>
+             <div class="w-11 h-7 bg-[white] rounded flex items-center justify-center text-[10px] font-bold border border-slate-700 text-slate-300"><img src="/images/bdo.png" width="50" height="50" /></div>
+             <div class="w-11 h-7 bg-[white] rounded flex items-center justify-center text-[10px] font-bold border border-slate-700 text-slate-300"><img src="/images/bpi.png" width="50" height="50" /></div>
              <div class="w-11 h-7 bg-[white] rounded flex items-center justify-center text-[9px] font-bold border border-slate-700 text-slate-300"><img src="/images/paypal.png" width="50" height="50" /></div>
              <div class="w-11 h-7 bg-[white] rounded flex items-center justify-center text-[9px] font-bold border border-slate-700 text-slate-300"><img src="/images/gcash.png" width="50" height="50" /></div>
           </div>
