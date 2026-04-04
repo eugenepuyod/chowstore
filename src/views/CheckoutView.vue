@@ -1,5 +1,10 @@
 <script setup>
 import { ref, computed } from 'vue'
+import { onMounted } from 'vue'
+
+onMounted(() => {
+  window.scrollTo({ top: 0, behavior: 'smooth' })
+})
 
 const isProcessing = ref(false)
 const orderPlaced = ref(false)

@@ -1,6 +1,11 @@
 <script setup>
 import { RouterLink } from 'vue-router'
 import { computed, ref } from 'vue'
+import { onMounted } from 'vue'
+
+onMounted(() => {
+  window.scrollTo({ top: 0, behavior: 'smooth' })
+})
 
 const cartItems = ref([
   { id: 3, name: 'Adorable Chow Puppy', category: 'Dogs', price: 1500.00, image: '/images/chow_puppy.png', quantity: 1 },

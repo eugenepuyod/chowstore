@@ -2,6 +2,11 @@
 import { ref, computed } from 'vue'
 import ProductCard from '../components/ProductCard.vue'
 import { products, categoriesList, tagsList } from '../data/products'
+import { onMounted } from 'vue'
+
+onMounted(() => {
+  window.scrollTo({ top: 0, behavior: 'smooth' })
+})
 
 const isListView = ref(false)
 const currentPage = ref(1)

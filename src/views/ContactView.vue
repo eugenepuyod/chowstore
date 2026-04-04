@@ -1,5 +1,10 @@
 <script setup>
 import { ref } from 'vue'
+import { onMounted } from 'vue'
+
+onMounted(() => {
+  window.scrollTo({ top: 0, behavior: 'smooth' })
+})
 
 const formStatus = ref(null)
 

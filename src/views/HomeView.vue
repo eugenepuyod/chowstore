@@ -3,8 +3,10 @@ import { RouterLink } from 'vue-router'
 import { ref, onMounted, onUnmounted } from 'vue'
 import ProductCard from '../components/ProductCard.vue'
 
+
 const featuredProducts = ref([
-  { id: 1, name: 'Chow Premium Kibble', category: 'Food', price: 45.99, image: '/images/premium_kibble.png', description: 'Grain-free formula for a shining coat.', badge: 'Best Seller' },
+  // { id: 1, name: 'Chow Premium Kibble', category: 'Food', price: 45.99, image: '/images/premium_kibble.png', description: 'Grain-free formula for a shining coat.', badge: 'Best Seller' },
+  { id: 12, name: 'Alimento Dog Chow Senior 16,5kg', category: 'Food', price: 500.00, image: '/images/alimento.webp', description: 'Dry food designed for senior dogs, with appropriate levels of moderate protein, increased fiber content, antioxidants for the immune system, and nutrient sources that support joint health. Formulated to maintain a healthy weight, comfortable digestion, and vitality in their mature years.', badge: 'Best Seller' },
   { id: 3, name: 'Adorable Chow Puppy', category: 'Dogs', price: 1500.00, image: '/images/chow_puppy.png', description: 'Vet-checked and fully vaccinated puppy.' },
   { id: 5, name: 'Wild Alaskan Salmon Feast', category: 'Food', price: 55.00, image: '/images/wild-alaskan-salmon-feast.jpg', description: 'High protein nutrition tailored for Chows.', badge: 'Premium' },
 ])
@@ -127,6 +129,10 @@ onMounted(() => {
 onUnmounted(() => {
   if (statObserver) statObserver.disconnect()
   if (slideInterval) clearInterval(slideInterval)
+})
+
+onMounted(() => {
+  window.scrollTo({ top: 0, behavior: 'smooth' })
 })
 </script>
 

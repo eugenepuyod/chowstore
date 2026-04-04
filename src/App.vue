@@ -89,18 +89,18 @@
           <h3 class="text-white font-bold text-lg mb-6">Popular Collection</h3>
           <ul class="space-y-5 text-sm">
             <li>
-              <RouterLink to="/shop" class="group flex gap-4 hover:text-white transition-colors">
+              <RouterLink to="/product/12" class="group flex gap-4 hover:text-white transition-colors">
                 <div class="w-14 h-14 rounded-xl overflow-hidden bg-slate-800 border border-slate-700 flex-shrink-0">
-                  <img src="/images/premium_kibble.png" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                  <img src="/images/alimento.webp" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
                 </div>
                 <div class="flex flex-col justify-center">
-                  <span class="group-hover:text-brand-400 transition-colors font-medium text-slate-200">Chow Premium Kibble</span>
-                  <span class="text-brand-500 font-semibold mt-1">₱45.99</span>
+                  <span class="group-hover:text-brand-400 transition-colors font-medium text-slate-200">Alimento Dog Chow</span>
+                  <span class="text-brand-500 font-semibold mt-1">₱500.00</span>
                 </div>
               </RouterLink>
             </li>
             <li>
-              <RouterLink to="/shop" class="group flex gap-4 hover:text-white transition-colors">
+              <RouterLink to="/product/3" class="group flex gap-4 hover:text-white transition-colors">
                 <div class="w-14 h-14 rounded-xl overflow-hidden bg-slate-800 border border-slate-700 flex-shrink-0">
                   <img src="/images/chow_puppy.png" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
                 </div>
@@ -111,7 +111,7 @@
               </RouterLink>
             </li>
             <li>
-              <RouterLink to="/shop" class="group flex gap-4 hover:text-white transition-colors">
+              <RouterLink to="/product/5" class="group flex gap-4 hover:text-white transition-colors">
                 <div class="w-14 h-14 rounded-xl overflow-hidden bg-slate-800 border border-slate-700 flex-shrink-0">
                   <img src="/images/wild-alaskan-salmon-feast.jpg" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
                 </div>
