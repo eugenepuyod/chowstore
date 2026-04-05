@@ -15,14 +15,20 @@ const submitContactForm = () => {
 </script>
 
 <template>
-  <div class="bg-slate-50 min-h-screen py-12">
+  <div class="bg-white min-h-screen">
     <!-- Header -->
-    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center mb-16">
-      <h1 class="text-4xl md:text-5xl font-extrabold text-slate-900 tracking-tight mb-4">Contact Us</h1>
-      <p class="text-lg text-slate-600">Have questions about our Chow-approved products or an existing order? Send us a message.</p>
-    </div>
+    
+    <section class="bg-brand-50 py-24 sm:py-32 relative overflow-hidden">
+      <div class="absolute inset-0 bg-gradient-to-br from-brand-100 to-white opacity-80 z-0"></div>
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center">
+        <h1 class="text-4xl md:text-6xl font-extrabold text-slate-900 tracking-tight mb-6">Contact Us</h1>
+        <p class="text-xl text-slate-600 max-w-3xl mx-auto leading-relaxed">
+          Have questions about our Chow-approved products or an existing order? Send us a message.
+        </p>
+      </div>
+    </section>
 
-    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 mb-20">
+    <div class="py-16 sm:py-24">
       <!-- Contact Form -->
       <div class="bg-white rounded-3xl p-8 md:p-12 shadow-[0_8px_30px_rgb(0,0,0,0.04)] border border-slate-100 mb-16 relative overflow-hidden">
         <!-- decorative bg -->
