@@ -385,7 +385,9 @@ onMounted(() => {
         </div>
         
         <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-          <RouterLink to="/shop" class="group relative rounded-3xl overflow-hidden bg-white/5 border border-white/10 hover:border-white/20 p-8 text-center transition-all duration-300 hover:-translate-y-2 hover:bg-white/10 backdrop-blur-sm">
+          <RouterLink 
+            :to="{ path: '/shop', query: { category: 'food' } }"
+            class="group relative rounded-3xl overflow-hidden bg-white/5 border border-white/10 hover:border-white/20 p-8 text-center transition-all duration-300 hover:-translate-y-2 hover:bg-white/10 backdrop-blur-sm">
             <div class="w-24 h-24 mx-auto mb-6 bg-gradient-to-br from-brand-400 to-orange-600 rounded-2xl shadow-lg flex items-center justify-center group-hover:scale-110 group-hover:rotate-3 transition-transform duration-300">
                <span class="text-4xl filter drop-shadow">🥩</span>
             </div>
@@ -396,7 +398,9 @@ onMounted(() => {
             </div>
           </RouterLink>
           
-          <RouterLink to="/shop" class="group relative rounded-3xl overflow-hidden bg-white/5 border border-white/10 hover:border-white/20 p-8 text-center transition-all duration-300 hover:-translate-y-2 hover:bg-white/10 backdrop-blur-sm">
+          <RouterLink 
+          :to="{ path: '/shop', query: { category: 'vitamins' } }"
+          class="group relative rounded-3xl overflow-hidden bg-white/5 border border-white/10 hover:border-white/20 p-8 text-center transition-all duration-300 hover:-translate-y-2 hover:bg-white/10 backdrop-blur-sm">
             <div class="w-24 h-24 mx-auto mb-6 bg-gradient-to-br from-rose-400 to-pink-600 rounded-2xl shadow-lg flex items-center justify-center group-hover:scale-110 group-hover:-rotate-3 transition-transform duration-300">
                <span class="text-4xl filter drop-shadow">💊</span>
             </div>
@@ -407,7 +411,9 @@ onMounted(() => {
             </div>
           </RouterLink>
           
-          <RouterLink to="/shop" class="group relative rounded-3xl overflow-hidden bg-white/5 border border-white/10 hover:border-white/20 p-8 text-center transition-all duration-300 hover:-translate-y-2 hover:bg-white/10 backdrop-blur-sm">
+          <RouterLink 
+          :to="{ path: '/shop', query: { category: 'dogs' } }"
+          class="group relative rounded-3xl overflow-hidden bg-white/5 border border-white/10 hover:border-white/20 p-8 text-center transition-all duration-300 hover:-translate-y-2 hover:bg-white/10 backdrop-blur-sm">
             <div class="w-24 h-24 mx-auto mb-6 bg-gradient-to-br from-amber-400 to-orange-600 rounded-2xl shadow-lg flex items-center justify-center group-hover:scale-110 group-hover:rotate-3 transition-transform duration-300">
                <span class="text-4xl filter drop-shadow">🐕</span>
             </div>

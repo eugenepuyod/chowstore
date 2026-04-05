@@ -2,25 +2,67 @@
 import { ref, computed } from 'vue'
 import ProductCard from '../components/ProductCard.vue'
 import { products, categoriesList, tagsList } from '../data/products'
-import { onMounted } from 'vue'
-
-onMounted(() => {
-  window.scrollTo({ top: 0, behavior: 'smooth' })
-})
+import { useRoute, useRouter } from 'vue-router'
+import { watch, onMounted } from 'vue'
 
 const isListView = ref(false)
 const currentPage = ref(1)
 const itemsPerPage = 6
 
+const route = useRoute()
+const router = useRouter()
+
 const searchQueryInput = ref('')
 const activeSearchQuery = ref('')
+
+const selectedCategory = ref('All')
+const maxPrice = ref(50000)
+const selectedTags = ref([])
+
+onMounted(() => {
+  window.scrollTo({ top: 0, behavior: 'smooth' })
+  applyCategoryFromURL()
+})
+
+// url category
+const applyCategoryFromURL = () => {
+  const category = route.query.category
+
+  if (category) {
+    // Match your product category format
+    selectedCategory.value =
+      category.charAt(0).toUpperCase() + category.slice(1)
+
+    currentPage.value = 1
+  }
+}
+
+watch(() => route.query.category, () => {
+  applyCategoryFromURL()
+})
+
+watch(currentPage, () => {
+  window.scrollTo({ top: 0, behavior: 'smooth' })
+})
+
+const setCategory = (category) => {
+  selectedCategory.value = category
+  currentPage.value = 1
+
+  // remove query from URL
+  router.replace({ path: '/shop' })
+}
+
+
+
+// url category
+
 const executeSearch = () => {
   activeSearchQuery.value = searchQueryInput.value
   updateFilters()
 }
-const selectedCategory = ref('All')
-const maxPrice = ref(50000)
-const selectedTags = ref([])
+
+
 
 const toggleTag = (tag) => {
   if (selectedTags.value.includes(tag)) {
@@ -121,7 +163,10 @@ const updateFilters = () => { currentPage.value = 1 }
           <div class="bg-white p-6 rounded-2xl border border-slate-100 shadow-sm">
              <h3 class="font-bold text-slate-800 mb-4 tracking-wide uppercase text-sm">Categories</h3>
              <div class="flex flex-col gap-2">
-               <button v-for="cat in categoriesList" :key="cat" @click="selectedCategory = cat; updateFilters()" :class="[
+               <button v-for="cat in categoriesList" 
+               :key="cat" 
+               @click="setCategory(cat)"
+               :class="[
                  'text-left px-3 py-2 rounded-xl font-medium transition-colors text-sm',
                  selectedCategory === cat ? 'bg-brand-50 text-brand-700 shadow-sm' : 'text-slate-600 hover:bg-slate-50 hover:text-slate-900'
                ]">
