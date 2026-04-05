@@ -124,27 +124,7 @@ const updateFilters = () => { currentPage.value = 1 }
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
       
       <!-- Top Title and Controls -->
-      <div class="flex flex-col md:flex-row justify-between items-end mb-10 pb-6 border-b border-slate-200">
-        <div>
-          <h1 class="text-4xl font-extrabold text-slate-900 mb-2 tracking-tight">Shop Collection</h1>
-          <p class="text-lg text-slate-600 max-w-2xl">Discover quality dogs, nutritious food, essential vitamins, and stylish accessories.</p>
-        </div>
-        
-        <div class="mt-6 md:mt-0 flex gap-2">
-          <button @click="isListView = false" :class="[
-            'p-2 rounded-lg transition-colors border',
-            !isListView ? 'bg-white border-brand-500 text-brand-600 shadow-[0_4px_10px_-4px_rgba(245,158,11,0.5)]' : 'bg-transparent border-transparent text-slate-400 hover:text-slate-600 hover:bg-slate-200'
-          ]">
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="7" height="7" x="3" y="3" rx="1"/><rect width="7" height="7" x="14" y="3" rx="1"/><rect width="7" height="7" x="14" y="14" rx="1"/><rect width="7" height="7" x="3" y="14" rx="1"/></svg>
-          </button>
-          <button @click="isListView = true" :class="[
-            'p-2 rounded-lg transition-colors border',
-            isListView ? 'bg-white border-brand-500 text-brand-600 shadow-[0_4px_10px_-4px_rgba(245,158,11,0.5)]' : 'bg-transparent border-transparent text-slate-400 hover:text-slate-600 hover:bg-slate-200'
-          ]">
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="8" x2="21" y1="6" y2="6"/><line x1="8" x2="21" y1="12" y2="12"/><line x1="8" x2="21" y1="18" y2="18"/><line x1="3" x2="3.01" y1="6" y2="6"/><line x1="3" x2="3.01" y1="12" y2="12"/><line x1="3" x2="3.01" y1="18" y2="18"/></svg>
-          </button>
-        </div>
-      </div>
+      
 
       <div class="flex flex-col lg:flex-row gap-10">
         
@@ -202,6 +182,31 @@ const updateFilters = () => { currentPage.value = 1 }
 
         <!-- Main Product Grid/List -->
         <div class="w-full lg:w-3/4 flex flex-col">
+
+          <!-- Top Title and Controls -->
+          <div class="flex flex-col md:flex-row justify-between items-end mb-10 pb-6 border-b border-slate-200">
+            <div>
+              <h1 class="text-4xl font-extrabold text-slate-900 mb-2 tracking-tight">Shop Collection</h1>
+              <p class="text-lg text-slate-600 max-w-2xl">Discover quality dogs, nutritious food, essential vitamins, and stylish accessories.</p>
+            </div>
+
+            <div class="mt-6 md:mt-0 flex gap-2">
+              <button @click="isListView = false" :class="[
+                'p-2 rounded-lg transition-colors border',
+                !isListView ? 'bg-white border-brand-500 text-brand-600 shadow-[0_4px_10px_-4px_rgba(245,158,11,0.5)]' : 'bg-transparent border-transparent text-slate-400 hover:text-slate-600 hover:bg-slate-200'
+              ]">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="7" height="7" x="3" y="3" rx="1"/><rect width="7" height="7" x="14" y="3" rx="1"/><rect width="7" height="7" x="14" y="14" rx="1"/><rect width="7" height="7" x="3" y="14" rx="1"/></svg>
+              </button>
+              <button @click="isListView = true" :class="[
+                'p-2 rounded-lg transition-colors border',
+                isListView ? 'bg-white border-brand-500 text-brand-600 shadow-[0_4px_10px_-4px_rgba(245,158,11,0.5)]' : 'bg-transparent border-transparent text-slate-400 hover:text-slate-600 hover:bg-slate-200'
+              ]">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="8" x2="21" y1="6" y2="6"/><line x1="8" x2="21" y1="12" y2="12"/><line x1="8" x2="21" y1="18" y2="18"/><line x1="3" x2="3.01" y1="6" y2="6"/><line x1="3" x2="3.01" y1="12" y2="12"/><line x1="3" x2="3.01" y1="18" y2="18"/></svg>
+              </button>
+            </div>
+          </div>
+
+
           
           <div v-if="filteredProducts.length === 0" class="flex-grow flex flex-col items-center justify-center p-12 bg-white rounded-[2rem] border border-slate-100 shadow-[0_4px_20px_-10px_rgba(0,0,0,0.05)] border-dashed">
             <div class="w-20 h-20 bg-slate-50 rounded-full flex items-center justify-center mb-4">
